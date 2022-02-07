@@ -2,7 +2,10 @@
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
     "module": "commonjs",
-    "isolatedModules": true
+    "isolatedModules": true,
+    "paths": {
+      "@type-challenges/*": ["./*"]
+    }
   },
-  "include": ["solutions/**/*.ts"]
+  "include": ["**/*.ts", "**/*.d.ts"]
 }
